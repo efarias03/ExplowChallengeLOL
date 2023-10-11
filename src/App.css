@@ -250,22 +250,25 @@ body,
 
 .transition {
   z-index: 4;
-  animation: removeLoader 1.3s ease 2s forwards;
+  animation-delay: 2.2s;
 }
 
 .transition.top {
   background-color: #1F2937;
-  animation: removeLoader 1.6s ease 2s forwards;
+  animation-delay: 2.2s;
+  z-index: 4;
 }
 
 .transition.middle {
   background-color: #2F2D2E;
-  animation: removeLoader 1.8s ease 2s forwards;
+  animation-delay: 2.4s;
+  z-index: 3;
 }
 
 .transition.bottom {
   background-color: #6E542E;
-  animation: removeLoader 2s ease 2s forwards;
+  animation-delay: 2.6s;
+  z-index: 2;
 }
 
 .transition-group {

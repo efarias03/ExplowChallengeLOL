@@ -16,7 +16,7 @@ export function App() {
             png: "/jinx.png",
             loadingbg: "jinxletter.jpg",
             champClass: "atirador",
-            route: "/"
+            route: ""
         },
         {
             name: "ashe",
@@ -26,7 +26,7 @@ export function App() {
             png: "/ashe.png",
             loadingbg: "asheletter.png",
             champClass: "atirador",
-            route: "/ashe"
+            route: "ashe"
         },
         {
             name: "garen",
@@ -36,7 +36,7 @@ export function App() {
             png: "/garen.png",
             loadingbg: "/garenletter.jpg",
             champClass: "lutador",
-            route: "/garen"
+            route: "garen"
         },
     ]
 
@@ -61,7 +61,7 @@ export function App() {
                                 title={champs[0].title}
                                 text={champs[0].text}
                                 previous={champs[2].route}
-                                next={champs[1].route}
+                                next={`${champs[1].route}`}
                                 background={champs[0].background}
                                 png={champs[0].png}
                                 champClass={champs[0].champClass}
@@ -71,8 +71,9 @@ export function App() {
                             path={champs[1].route}
                             element={<Champ name={champs[1].name}
                                 title={champs[1].title}
-                                text={champs[1].text} previous="/"
-                                next={champs[2].route}
+                                text={champs[1].text} 
+                                previous={`../${champs[0].route}`}
+                                next={`../${champs[2].route}`}
                                 background={champs[1].background}
                                 png={champs[1].png}
                                 champClass={champs[1].champClass}
@@ -83,8 +84,8 @@ export function App() {
                             element={<Champ name={champs[2].name}
                                 title={champs[2].title}
                                 text={champs[2].text}
-                                previous={champs[1].route}
-                                next="/"
+                                previous={`../${champs[1].route}`}
+                                next={`../${champs[0].route}`}
                                 background={champs[2].background}
                                 png={champs[2].png}
                                 champClass={champs[2].champClass}
