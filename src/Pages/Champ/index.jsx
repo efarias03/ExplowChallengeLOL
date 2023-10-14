@@ -18,7 +18,7 @@ export function Champ({
         <>
             <div className="champ-loader" >
                 <div className="top-loader">
-                    <h1 style={{ backgroundImage: `url(${loadingbg})` }}>{name}</h1>
+                    <h1 id="loader-text" style={{ backgroundImage: `url(${loadingbg})` }}>{name}</h1>
                 </div>
 
                 <div className="bottom-loader">

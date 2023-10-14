@@ -12,8 +12,8 @@ export function App() {
             name: "jinx",
             title: "O gatilho desenfreado",
             text: "Uma criminosa impulsiva e maníaca de Zaun, Jinx vive para disseminar o caos sem se preocupar com as consequências. Com um arsenal de armas mortais, ela detona as explosões mais altas e mais luminosas para deixar um rastro de destruição e pânico por onde passa. Jinx abomina o tédio e deixa alegremente sua marca caótica de pandemônio aonde quer que vá.",
-            background: "/jinxbg.jpg",
-            png: "/jinx.png",
+            background: "jinxbg.jpg",
+            png: "jinx.png",
             loadingbg: "jinxletter.jpg",
             champClass: "atirador",
             route: ""
@@ -22,8 +22,8 @@ export function App() {
             name: "ashe",
             title: "A arqueira de gelo",
             text: "A mãe de guerra Glacinata da tribo de Avarosa, Ashe comanda a horda mais populosa do norte. Estoica, inteligente e idealista, mesmo que desconfortável com seu papel de liderança, ela canaliza as magias ancestrais de sua linhagem para empunhar um arco de Gelo Verdadeiro. Com a crença de seu povo de que Ashe seria a heroína mítica, Avarosa, reencarnada, ela espera unificar Freljord mais uma vez.",
-            background: "/ashebg.jpg",
-            png: "/ashe.png",
+            background: "ashebg.jpg",
+            png: "ashe.png",
             loadingbg: "asheletter.png",
             champClass: "atirador",
             route: "ashe"
@@ -32,9 +32,9 @@ export function App() {
             name: "garen",
             title: "O poder de demacia",
             text: "Um guerreiro nobre e orgulhoso, Garen faz parte da Vanguarda Destemida. Popular entre seus companheiros e respeitado o suficiente por seus inimigos, sua reputação é nada mais do que o esperado de um herdeiro da prestigiosa família Stemmaguarda, encarregada de defender Demacia e seus ideais. Vestido com uma armadura resistente à magia e empunhando uma poderosa espada, Garen está sempre pronto para confrontar magos e feiticeiros no campo de batalha.",
-            background: "/garenbg.jpg",
-            png: "/garen.png",
-            loadingbg: "/garenletter.jpg",
+            background: "garenbg.jpg",
+            png: "garen.png",
+            loadingbg: "garenletter.jpg",
             champClass: "lutador",
             route: "garen"
         },
@@ -47,7 +47,6 @@ export function App() {
         <>
             <div className="logo">
                 <a className="logo" href="https://www.leagueoflegends.com/pt-br/">
-                    <img src="LeagueOfLegendsLogo.png" alt="" srcset="" />
                 </a>
             </div>
             <TransitionGroup className="transition-group">
